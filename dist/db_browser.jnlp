@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="db_browser.jnlp">
+  <information>
+    <title>db_browser</title>
+    <vendor>birkanegee</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="db_browser.jar" size="13048" download="eager" />
+    <jar href="lib/mysql-connector-j-9.1.0.jar" size="2597591" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="db_browser" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="db_browser.Db_browser"  name="db_browser" />
+  <update check="always"/>
+</jnlp>
